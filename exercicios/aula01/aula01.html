@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - HTML Semântico</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: auto;
+            background-color: rgb(173, 172, 172);
+            width: 400px;
+            border-radius: 5px;
+            text-align: center;
+            height: 400px;
+
+            background-image: url(imagens/salvando-a-terra-com-tecnologia-artificial.png);
+
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            transform: translate(-50%, -50%);
+        }
+
+        main > footer{
+            position: relative;
+            top: 60%;
+        }
+        input#botao-clicar{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Aula 1</h1>
+        <h2>
+            Arborização Inteligente
+        </h2>
+        
+        <footer>
+            <p>
+                &copy;Desenvolvido por Júlio Monteiro
+            </p>
+    </main>
+    <input type="button" value="Clique aqui!" id="botao-clicar" onclick="clicou()">
+    </footer>
+
+    <script>
+        function clicou() {
+            var botao = document.querySelector('main')
+
+            botao.innerHTML = `<strong>SALVE O AMBIENTE!</strong>`
+        }
+    </script>
+</body>
+</html>

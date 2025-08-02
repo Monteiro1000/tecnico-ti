@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/processo.php" method="post">
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+        
+        <label for="icpf">CPF:</label>
+        <input type="number" name="cpf" id="icpf">
+
+        <label for="inascimento">Data de nascimento:</label>
+        <input type="date" name="dnascimento" id="inascimento">
+        
+        <input type="radio" name="masc" id="radsex" checked>
+        <label for="radsex"> Masculino</label>
+        
+        <input type="radio" name="fem" id="radsex">
+        <label for="radsex">Feminino</label>
+
+        <input type="radio" name="outro" id="radsex">
+        <label for="radsex">Outro</label>
+        
+        <label for="iestadocivil">Estado Civil:</label>
+        <label for="iestadocivil">Solteiro</label>
+        <input type="radio" name="solteiro" id="iestadocivil">
+
+        <button type="submit">Enviar</button>
+    </form>
+            
+</html>
