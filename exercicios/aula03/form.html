@@ -7,33 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="/processo.php" method="post">
-        <label for="nome">Nome completo:</label>
-        <input type="text" name="nome" id="nome">
-
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
+    
+        <form action="/processo.php" method="post">
+            <p>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Seu Nome">
+            </p>
+            <p>
+                <label for="email">E-mail:</label><br> 
+                <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+            </p>
         
-        <label for="icpf">CPF:</label>
-        <input type="number" name="cpf" id="icpf">
-
-        <label for="inascimento">Data de nascimento:</label>
-        <input type="date" name="dnascimento" id="inascimento">
+            <p>
+                <label for="icpf">CPF:</label><br>
+                <input type="number" name="cpf" id="icpf" placeholder="000.000.000-00">
+            </p>
+            <p>
+                <label for="inascimento">Data de nascimento:</label><br>
+                <input type="date" name="dnascimento" id="inascimento" required>
+            </p>
         
-        <input type="radio" name="masc" id="radsex" checked>
-        <label for="radsex"> Masculino</label>
+            <p>
+                <input type="radio" name="masc" id="radsex" checked required>
+                <label for="radsex"> Masculino</label>
         
-        <input type="radio" name="fem" id="radsex">
-        <label for="radsex">Feminino</label>
-
-        <input type="radio" name="outro" id="radsex">
-        <label for="radsex">Outro</label>
+                <input type="radio" name="fem" id="radsex" required>
+                <label for="radsex">Feminino</label>
+                
+                <input type="radio" name="outro" id="radsex" required>
+                <label for="radsex">Outro</label>
+                
+            </p>
         
-        <label for="iestadocivil">Estado Civil:</label>
-        <label for="iestadocivil">Solteiro</label>
-        <input type="radio" name="solteiro" id="iestadocivil">
-
-        <button type="submit">Enviar</button>
-    </form>
+            <p>
+                <label for="iestadocivil">Estado Civil:</label>
+                <input type="text" name="solteiro" id="iestadocivil" list="lstestcivil" required placeholder="Selecione">
+                <datalist id="lstestcivil">
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viúvo">Viúvo</option>
+                    <option value="União estável">União estável</option>
+        
+                </datalist>
+            </p>
+        
+        
+            <button type="submit">Enviar</button>
+        </form>
+    
             
 </html>

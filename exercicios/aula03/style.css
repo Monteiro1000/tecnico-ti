@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -46,10 +57,41 @@
 }
 
 .caixa {
-            width: 100px;
-            height: 100px;
-            background-color: orange;
-            position: relative;
-            top: 30px;
-            left: 50px;
-        }
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+form{
+  background-color: rgb(51, 144, 231);
+  margin: auto;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: 10%;
+  border-radius: 5px;
+  
+  
+}
+
+form > p {
+  padding-bottom: 15px;
+  text-align: left;
+  
+}
+
+form > p > input{
+  border-radius: 5px;
+  
+}
+button{
+  padding: 5px;
+  border-radius: 5px;
+}
+input{
+  
+}
