@@ -20,6 +20,28 @@
             </nav>
         </div>
 
+        <div id="contatos">
+            <form action="processo.php" method="post">
+
+                <p>
+                    <label for="inome">Nome:</label><br>
+                    <input type="text" placeholder="Escreva seu nome">
+
+                </p>
+
+                <p>
+                    <label for="itel">Telefone:</label><br>
+                    <input type="number" name="telegone" id="itel" placeholder="00 00 00000000">
+
+                </p>
+
+                <p>
+                    <label for="me">Mensagem:</label><br>
+                    <textarea name="mensagem" id="imsg" required minlength="12" maxlength="200" placeholder="Digite aqui"></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
         
     
 </body>

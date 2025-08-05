@@ -80,7 +80,7 @@ form{
 
 form > p {
   padding-bottom: 15px;
-  text-align: left;
+  text-align: center;
   
 }
 
@@ -91,7 +91,26 @@ form > p > input{
 button{
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
-input{
-  
+a{
+  text-decoration: none;
+  background-color: gray;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+div#contatos form{
+  text-align: left;
+  width: 200px;
+
+}
+button{
+  margin-left: 38%;
+}
+
+div#contatos input{
+  margin: auto;
 }
