@@ -8,6 +8,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="media-query/style.css">
     <title>Latícinio portal do Sertão</title>
 </head>
 
@@ -18,8 +19,7 @@
             <div class="nav-container">
                 <nav>
                     <a href="#">
-                        <img src="img/90469-OJMFS7-964.jpg" alt="logo do Laticínio portal do Sertão"
-                           class="logo">
+                        <img src="img/90469-OJMFS7-964.jpg" alt="logo do Laticínio portal do Sertão" class="logo">
                     </a>
                     <ul class="navbar-items">
                         <li><a href="#produtos">produtos</a></li>
@@ -37,7 +37,7 @@
                 <p>Qualidade e sabor direto do Sertão para você</p>
             </div>
             <section class="Laticínios">
-                <ul >
+                <ul>
                     <li>
                         <i class="fas fa-bread-slice"></i>
                         <h3>Iogurte</h3>
@@ -74,9 +74,16 @@
                 <h2>Sobre Nós</h2>
                 <p>Conheça a história do Laticínio portal do Sertão e nosso compromisso com a </p>
             </section>
-            <section id="contato">
+            <section class="contact-container">
                 <h2>Contato</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque amet animi atque ratione eius quod modi mollitia. Qui natus consequuntur culpa maiores eos, repellendus quibusdam officia, eius exercitationem minima adipisci?</p>
+
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Seu nome" />
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail" />
+                    <textarea name="message" id="message"
+                        placeholder="Descreva o que você precisa ou o seu projeto..."></textarea>
+                    <input type="submit" value="Enviar" />
+                </form>
             </section>
         </main>
 
