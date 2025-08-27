@@ -22,3 +22,9 @@ console.log(typeof `isso é uma string`); // string
 // 11 - Concatenação de Strings
 console.log('Isso é' + 'uma string'); // Concatenação com o operador +
 console.log('Isso é' + 123); // Concatenação com o operador =, número convertido para string
+
+// 19 - Mudança de Tipo (Coerção)
+console.log('5' + 5); // '55' - concatenação, número convertido
+console.log('5' - 5); // 0 - subtração, string convertida para
+console.log('5' * 5); // 25 - multiplicação, string convetida, string convertida
+console.log('10' / 2); // 5 - divisão, string convertida para número
