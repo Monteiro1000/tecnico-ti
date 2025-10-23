@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import FirstComponent from './Componentes/FirstComponet'
 import './Componentes/FirstComponet'
+import SecondComponent from './Componentes/secondcomponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,9 @@ function App() {
     <div >
       
       <FirstComponent></FirstComponent>
+      <SecondComponent></SecondComponent>
     </div>
+    
   )
 }
 
