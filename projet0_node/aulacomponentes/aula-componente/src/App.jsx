@@ -6,6 +6,8 @@ import FirstComponent from './Componentes/FirstComponet'
 import './Componentes/FirstComponet'
 import SecondComponent from './Componentes/secondcomponent'
 import TerceiroComponent from './Componentes/TerceiroComponent'
+import TemplateExpression from './Componentes/TemplateExpression'
+
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       
       <FirstComponent></FirstComponent>
       <SecondComponent></SecondComponent>
-        
+      <TemplateExpression></TemplateExpression>
     </div>
     
   )
