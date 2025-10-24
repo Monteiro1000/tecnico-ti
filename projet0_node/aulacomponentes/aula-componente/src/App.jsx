@@ -5,6 +5,8 @@ import './App.css'
 import FirstComponent from './Componentes/FirstComponet'
 import './Componentes/FirstComponet'
 import SecondComponent from './Componentes/secondcomponent'
+import TerceiroComponent from './Componentes/TerceiroComponent'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,7 @@ function App() {
       
       <FirstComponent></FirstComponent>
       <SecondComponent></SecondComponent>
+        
     </div>
     
   )
