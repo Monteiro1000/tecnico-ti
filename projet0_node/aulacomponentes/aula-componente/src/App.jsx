@@ -7,6 +7,7 @@ import './Componentes/FirstComponet'
 import SecondComponent from './Componentes/secondcomponent'
 import TerceiroComponent from './Componentes/TerceiroComponent'
 import TemplateExpression from './Componentes/TemplateExpression'
+import MyForm from './Componentes/MyForm'
 
 
 
@@ -15,10 +16,7 @@ function App() {
 
   return (
     <div >
-      
-      <FirstComponent></FirstComponent>
-      <SecondComponent></SecondComponent>
-      <TemplateExpression></TemplateExpression>
+      <MyForm/>
     </div>
     
   )
