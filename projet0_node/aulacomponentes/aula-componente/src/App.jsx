@@ -8,6 +8,7 @@ import SecondComponent from './Componentes/secondcomponent'
 import TerceiroComponent from './Componentes/TerceiroComponent'
 import TemplateExpression from './Componentes/TemplateExpression'
 import MyForm from './Componentes/MyForm'
+import Events from './Componentes/event'
 
 
 
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div >
-      <MyForm/>
+      <Events/>
     </div>
     
   )
